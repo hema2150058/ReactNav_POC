@@ -1,18 +1,16 @@
 import 'react-native-gesture-handler';
 import * as React from 'react';
 import { Text, View,Image } from 'react-native';
-import DashboardScreen from '../screens/DashboardScreen';
 import HomeScreen from '../screens/HomeScreen';
 import InfoScreen from '../screens/InfoScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import ClaimScreen from '../screens/SubmitClaim';
 import ProfileScreen from '../screens/MyProfile';
 import CardsScreen from '../screens/MyCards';
-import LoginMpinScreen from '../screens/LoginMpinScreen';
 
 import { createMaterialBottomTabNavigator } from '@react-navigation/material-bottom-tabs';
 import { MaterialCommunityIcons,Ionicons,Feather,FontAwesome } from '@expo/vector-icons';
-import { NavigationContainer, useNavigation } from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 import {createDrawerNavigator, DrawerContentScrollView,DrawerItemList} from '@react-navigation/drawer';
 
 //Import native-stack navigator like this
@@ -52,24 +50,6 @@ const handleLogout =() =>{
     </View>
   );
 }
-
-
-
-const HomeScreenStack = () => {
-  return (
-    
-    <Stack.Navigator
-      initialRouteName="LoginMpin"
-      screenOptions={{headerShown: false}}>
-      <Stack.Screen name="LoginMpin" component={LoginMpinScreen} options={{headerShown: false}} />
-      <Stack.Screen name="BottomTabStack" component={MyTabs} options={{headerShown: false}} />
-
-    </Stack.Navigator>
-   
-  );
-};
-
-
 
 // const HomeScreenStack = () => {
 //   return (

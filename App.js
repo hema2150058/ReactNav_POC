@@ -44,8 +44,8 @@ const handleLogout =() =>{
       </View>
       <DrawerItemList {...props}/>
     </DrawerContentScrollView>
-    <TouchableOpacity style={{height:60, backgroundColor:'#f4511e', alignItems:'center',justifyContent:'center'}}>
-<Text style={{color:'white'}} onPress={handleLogout} o>Logout</Text>
+    <TouchableOpacity style={{height:60, backgroundColor:'#f4511e', alignItems:'center',justifyContent:'center'}} onPress={handleLogout} >
+<Text style={{color:'white'}} >Logout</Text>
     </TouchableOpacity>
     </View>
   );
